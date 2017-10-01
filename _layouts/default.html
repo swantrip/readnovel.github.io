@@ -4,10 +4,72 @@
     <title>Read Novel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+
+      #audio_btn {
+        position:absolute;
+        right:4px;
+        top:4px;
+        width: 32px;
+        height: 32px;
+        background: url('/images/music_48_48.png') no-repeat 0 0;
+        background-size: 100%;
+        z-index:100;
+      }
+
+      #audio_btn.on {
+          -webkit-animation: rotating 1.2s linear infinite;
+          animation: rotating 1.2s linear infinite;
+      }
+
+      @-webkit-keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+      }
+
+      @keyframes rotating {
+          from {
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+          }
+          to {
+              -webkit-transform: rotate(360deg);
+              -moz-transform: rotate(360deg);
+              -ms-transform: rotate(360deg);
+              -o-transform: rotate(360deg);
+              transform: rotate(360deg);
+          }
+      }
+    </style>
+
+    <script>
+      $(function() {
+        $("#audio_btn").on("click", function() {
+
+        });
+      });
+    </script>
+
   </head>
   <body>
+    <div id="audio_btn" class="on"></div>
     <section class="main-content">
       {{ content }}
     </section>
