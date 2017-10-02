@@ -1,3 +1,7 @@
+<audio autoplay="autoplay" loop="true">
+  <source src="xiaoaojianghuqu.mp3" type="audio/mpeg">
+</audio>
+
 [第一章　灭门](第一到四章.md#第一章灭门)
 
 [第二章　聆秘](第一到四章.md#第二章聆秘)
